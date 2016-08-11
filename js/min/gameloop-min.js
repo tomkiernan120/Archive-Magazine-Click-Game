@@ -1,0 +1,1 @@
+var frame=0;!function(){function e(){window.requestAnimationFrame(e);var n=gameOptions.fps;gameOptions.pointsPerSecond>0&&frame==n&&(console.log("test"),gameOptions.points=gameOptions.points+gameOptions.pointsPerSecond,gameOptions.update()),frame++,frame>n&&(frame=0,gameOptions.checkButtons())}e()}();
