@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/css/main.css" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">    <link rel="stylesheet" href="/css/main.css" charset="utf-8">
     <meta charset="utf-8">
-    <title>Click Game</title>
+    <title>Click Repost</title>
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/var.js"></script>
     <script src="js/functions.js"></script>
@@ -12,16 +12,94 @@
   </head>
   <body>
     <div class="main">
-      <div class="inner">
+      <div class="header">
+        <div class="header_top">
+          <div class="header_top_inner">
+            <div class="link selected"><a href="/">click repost</a></div>
+            <div class="link"><a href="http://www.archivemagazine.co.uk">archivemagazine</a></div>
+          </div>
+        </div>
+        <div class="header_bottom">
+          <div class="header_bottom_inner">
+            <div class="text-container">
+              <h1>Clickrepost</h1>
+              <h2>A simple click based game</h2>
+              <hr>
+              <p>clickrepost is a simple click game.<br/><br/>Simply click the "make blog post live" to get views. Then exchange these view for upgrades.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content_inner">
+          <div class="col_three">
+            <h1>Dashboard</h1>
+            <div class="dashboard">
+              <div class="third_dashboard">
+                <button id="post" type="button">Make blog post live</button>
+              </div>
+              <div class="third_dashboard">
+                <div class="third_half_dashboard">
+                  <h3>Views per second: <span id="pps">0</span></h3>
+                </div>
+                <div class="third_half_dashboard">
+                  <h3>Purchased upgrades: <span id="purchasedTotal">0</span></h3>
+                </div>
+              </div>
+              <div class="third_dashboard">
+                <div class="dashboard_points">
+                  <span id="points">0</span>
+                </div>
+                <h3>Views</h3>
+              </div>
+            </div>
+            <h1>Updates</h1>
+            <hr/>
+            <h3>15th of August 2016</h3>
+            <p>
+              First build of Click repost, a simple click game.
+            </p>
+            <P>
+              <br/>
+              <br/>
+              Please check archivemagazine for the blog post associated with this game at <a href="http://www.archivemagazine.co.uk">archive magazine</a>
+            </P>
+            <h1>Version</h1>
+            <hr/>
+            <p>BETA 0.1</p>
+          </div>
+          <div class="col_one">
+            <h1>Upgrades</h1>
+            <div class="button-list">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_inner">
+          <div class="left"><h3>&copy; copyright <span id="year"></span>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="NEP2HEXLAEC5G">
+              <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+            </form>
+
+</h3></div>
+          <div class="right"><h3>Designed and Built by Tom Kiernan <a href="https://www.twitter.com/tm_kiernan" target="_blank">@tm_kiernan</a></h3></div>
+        </div>
+      </div>
+      <!-- <div class="inner">
         <div class="header">
-          <div class="inner">
+          <div class="header_inner">
             <h2>Blogger Click</h2>
             <h3>Fame <span id="points">0</span></h3>
             <h3>Points per Second <span id="pps">0</span></h3>
           </div>
         </div>
         <div class="content">
-          <div class="inner">
+          <div class="content_inner">
             <div class="three-col">
               <button id="post" type="button">Post Blog</button>
             </div>
@@ -33,7 +111,7 @@
           </div>
         </div>
         <div class="footer"></div>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>

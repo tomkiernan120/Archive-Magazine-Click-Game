@@ -8,7 +8,6 @@ var frame = 0;
 
     // Your main loop contents.
     if(gameOptions.pointsPerSecond > 0 && frame == fps){
-      console.log('test');
       gameOptions.points = gameOptions.points + gameOptions.pointsPerSecond;
       gameOptions.update();
     }

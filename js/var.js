@@ -10,6 +10,14 @@ var gameOptions = {
   },
   pointsPerSecond: 0,
   buttonList: '.button-list',
+  purchasedTotal: 0,
+  updatePurchased: function(){
+    this.purchasedTotal = 0;
+    for (var i = 0; i < this.upgrades.length; i++) {
+      var upgrade = this.upgrades[i];
+      this.purchasedTotal = this.purchasedTotal + upgrade.purchased;
+    }
+  },
   upgrades: [
     {
       name: 'Schedule post',
